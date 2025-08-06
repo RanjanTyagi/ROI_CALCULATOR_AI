@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "npx tsc && vite build",
     "preview": "vite preview",
     "deploy": "vercel --prod"
   },
@@ -31,4 +31,3 @@
     "vite": "^5.0.8"
   }
 }
-
