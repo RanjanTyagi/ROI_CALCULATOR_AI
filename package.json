@@ -3,9 +3,13 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
+  "engines": {
+    "node": "18.x"
+  },
   "scripts": {
     "dev": "vite",
-    "build": "tsc --noEmit && vite build",
+    "build": "npm run type-check && vite build",
+    "type-check": "tsc --noEmit",
     "preview": "vite preview",
     "deploy": "vercel --prod"
   },
